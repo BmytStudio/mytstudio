@@ -33,7 +33,9 @@ h2::before{content:'';width:4px;height:18px;border-radius:2px;background:linear-
 .priv{display:flex;gap:14px;background:rgba(124,58,237,.06);border:1px solid rgba(124,58,237,.18);border-radius:var(--r);padding:20px;margin-top:36px}
 .priv b{color:var(--purple-light)}
 .priv p{font-size:.95rem;color:var(--slate-300)}
-.shots{display:grid;gap:16px;margin-top:18px}
+.shot{background:var(--navy-900)}
+.shot img{display:block;width:100%;height:auto;border-radius:var(--r) var(--r) 0 0}
+figcaption{font-size:.82rem;color:var(--slate-500);padding:12px 14px;border-top:1px solid rgba(255,255,255,.05)}
 @media(min-width:640px){.shots{grid-template-columns:1fr 1fr}}
 .shot{border:1px solid rgba(255,255,255,.08);border-radius:var(--r);overflow:hidden;background:var(--navy-900)}
 .bar{height:34px;background:rgba(255,255,255,.04);display:flex;align-items:center;gap:6px;padding:0 12px;border-bottom:1px solid rgba(255,255,255,.05)}
@@ -74,12 +76,7 @@ footer a{color:var(--slate-400)}
   </div>
 
   <h2>لمحة من الواجهة</h2>
-  <div class="shots">      <div class="shot"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div>
-        <div class="body"><div class="sk w45"></div><div class="block"></div><div class="sk w70"></div><div class="sk w90"></div><div class="sk w55"></div></div>
-      </div>      <div class="shot"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div>
-        <div class="body"><div class="sk w45"></div><div class="block"></div><div class="sk w70"></div><div class="sk w90"></div><div class="sk w55"></div></div>
-      </div></div>
-  <p class="note">شكل توضيحي للواجهة — لا تُعرض أسماء أو بيانات حقيقية.</p>
+    <figure class="shot"><img src="shots/tools.jpg" width="1200" height="806" loading="lazy" alt="شاشة الخطابات: خطاب رسمي بترويسة المدرسة — الاسم والصف مثال وهمي."><figcaption>شاشة الخطابات: خطاب رسمي بترويسة المدرسة — الاسم والصف مثال وهمي.</figcaption></figure>
 
   <footer>
     <span>© ٢٠٢٦ MyT Studio</span>

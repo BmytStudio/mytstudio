@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مفترق الأقدار — MyT Studio</title>
+<meta name="description" content="لعبة مغامرات نصية عربية: كل اختيار يفتح مساراً ويغلق آخر — خلفيات، سمات، وأحداث تُحسب فرصها من شخصيتك.">
+<style>
+:root{--navy-950:#0A0E27;--navy-900:#0F172A;--navy-800:#141D3A;--navy-700:#1E2A4F;--purple:#7C3AED;--purple-light:#A78BFA;--teal:#14B8A6;--teal-light:#5EEAD4;--slate-200:#E2E8F0;--slate-300:#CBD5E1;--slate-400:#94A3B8;--slate-500:#64748B;--sp:16px;--r:16px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Tajawal',system-ui,sans-serif;background:var(--navy-950);color:var(--slate-200);line-height:1.8;min-height:100vh;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 20% 10%,rgba(124,58,237,.10),transparent 55%),radial-gradient(ellipse at 85% 0%,rgba(20,184,166,.07),transparent 50%);pointer-events:none;z-index:-1}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:900px;margin:0 auto;padding:24px 20px 72px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.06)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.05rem}
+.logo span{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,var(--purple),var(--teal));color:#fff;font-size:1rem}
+.top a.back{font-size:.9rem;color:var(--slate-400);border:1px solid rgba(255,255,255,.08);padding:8px 14px;border-radius:100px;transition:.2s}
+.top a.back:hover{color:var(--slate-200);border-color:rgba(124,58,237,.4)}
+header.pg{margin:48px 0 40px}
+.icon{font-size:2.2rem;display:block;margin-bottom:14px}
+h1{font-size:2rem;line-height:1.35;letter-spacing:-.01em;margin-bottom:12px}
+.chip{display:inline-block;font-size:.78rem;font-weight:700;padding:4px 12px;border-radius:100px;background:rgba(20,184,166,.12);border:1px solid rgba(20,184,166,.25);color:var(--teal-light)}
+.chip.dev{background:rgba(124,58,237,.12);border-color:rgba(124,58,237,.28);color:var(--purple-light)}
+.lead{font-size:1.1rem;color:var(--slate-300);margin-top:18px;max-width:64ch}
+h2{font-size:1.15rem;margin:44px 0 18px;display:flex;align-items:center;gap:10px}
+h2::before{content:'';width:4px;height:18px;border-radius:2px;background:linear-gradient(var(--purple),var(--teal))}
+.grid{display:grid;gap:14px}
+@media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:rgba(20,29,58,.6);border:1px solid rgba(255,255,255,.06);border-radius:var(--r);padding:20px}
+.card h3{font-size:1rem;margin-bottom:8px}
+.card p{font-size:.95rem;color:var(--slate-400)}
+.shot{border:1px solid rgba(255,255,255,.08);border-radius:var(--r);overflow:hidden;background:var(--navy-900)}
+.shot img{display:block;width:100%;height:auto}
+figcaption{font-size:.82rem;color:var(--slate-500);padding:12px 14px;border-top:1px solid rgba(255,255,255,.05)}
+.shots2{display:grid;gap:16px}
+@media(min-width:640px){.shots2{grid-template-columns:1fr 1fr}}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.fact{font-size:.85rem;color:var(--slate-300);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:100px;padding:6px 14px}
+.fact b{color:var(--teal-light)}
+footer{margin-top:56px;padding-top:24px;border-top:1px solid rgba(255,255,255,.06);font-size:.85rem;color:var(--slate-500);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+footer a{color:var(--slate-400)}
+</style>
+<meta name="theme-color" content="#05070F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="page.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="logo" href="index.html"><span>M</span> MyT Studio</a>
+    <a class="back" href="index.html">← كل الأعمال</a>
+  </div>
+
+  <header class="pg">
+    <span class="icon">🗺️</span>
+    <h1>مفترق الأقدار</h1>
+    <span class="chip dev">قيد البناء</span>
+    <p class="lead">لعبة مغامرات نصية عربية: كل اختيار يفتح مساراً ويغلق آخر.</p>
+    <div class="facts"><span class="fact">عربي وإنجليزي</span><span class="fact">اختيارات بفرص <b>محسوبة</b></span><span class="fact">شخصية تُبنى وتُحفظ</span><span class="fact">قيد البناء</span></div>
+  </header>
+
+  <h2>كيف تُلعب</h2>
+  <div class="grid">
+    <div class="card"><h3>تختار خلفيتك</h3><p>سبع بدايات: ابن القافلة، تلميذ المعبد، كاتب العدل، الجنديّ الفارّ، ابن الأزقة، العشّاب، أو مغامر حرّ بلا خلفية.</p></div>
+    <div class="card"><h3>ثم سِمَتك</h3><p>ستّ سِمات تُثقل شخصيتك: فطِن، صَلْب، مُتحدّث، خفيف اليدين، مولود تحت نجم، حافظ الحكايات.</p></div>
+    <div class="card"><h3>حدث، لوحة، وقرار</h3><p>كل حدث: مشهد مصوَّر ونص سردي، ثم خيارات يظهر معها ثمنها وفرصة نجاحها.</p></div>
+    <div class="card"><h3>شخصيتك تُحفظ</h3><p>الصحة والعقل والذهب والشهرة والسمات تتراكم مع كل قرار، وتسير معك في الرحلة.</p></div>
+  </div>
+
+  <h2>من داخل اللعبة</h2>
+  <div class="shots2">
+    <figure class="shot"><img src="shots/lia-play-narr.jpg" width="780" height="1900" loading="lazy" alt="شاشة اللعبة: مشهد خيمة الوراثة مع النص السردي وسمات الشخصية أعلى الشاشة."><figcaption>الحدث ٢ · خيمة الوراثة: وصية الوالد المفقودة — النص السردي</figcaption></figure>
+    <figure class="shot"><img src="shots/lia-play-choices.jpg" width="780" height="920" loading="lazy" alt="شاشة اللعبة: خياران مع الثمن وفرصة النجاح ٧٠٪ لكل منهما."><figcaption>الخيارات: الثمن ظاهر، وفرصة النجاح ٧٠٪ محسوبة من الحكمة أو الكاريزما</figcaption></figure>
+  </div>
+
+  <footer>
+    <span>© ٢٠٢٦ MyT Studio</span>
+    <a href="index.html">← رجوع إلى الأعمال</a>
+  </footer>
+</div>
+<script src="page.js" defer></script>
+</body>
+</html>

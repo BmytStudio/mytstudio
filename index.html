@@ -657,6 +657,25 @@ a:hover { color: var(--white); }
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ============================================
+   v3 ADDITIONS — أعمال جديدة (إضافة لا تعديل)
+   ============================================ */
+/* قراءة مريحة: لا نص وصف أقل من 16px على الجوال */
+.project-item-title { font-size: 1.05rem; }
+.project-item-desc { font-size: 1rem; line-height: 1.75; color: var(--slate-400); }
+.project-item-link { font-size: 0.875rem; }
+.project-item.is-muted { opacity: 0.55; cursor: default; }
+.project-item.is-muted:hover { transform: none; box-shadow: none; border-color: rgba(124, 58, 237, 0.04); }
+.cat-note {
+  font-size: var(--text-xs);
+  color: var(--slate-500);
+  margin-top: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  background: rgba(124, 58, 237, 0.02);
+  border: 1px dashed rgba(124, 58, 237, 0.06);
+}
 </style>
 </head>
 <body>
@@ -669,9 +688,9 @@ a:hover { color: var(--white); }
       MyT Studio
     </div>
     <ul class="nav-links">
-      <li><a href="#projects">المشاريع</a></li>
+      <li><a href="#projects">الأعمال</a></li>
       <li><a href="#about">عن الاستوديو</a></li>
-      <li><a href="https://x.com/_MyTStudio" target="_blank">تواصل</a></li>
+      <li><a href="https://x.com/_MyTStudio" target="_blank" rel="noopener">تواصل</a></li>
     </ul>
   </div>
 </nav>
@@ -687,14 +706,14 @@ a:hover { color: var(--white); }
     </h1>
     <p class="hero-desc fade-up fade-up-d3">
       أصنع حلولاً رقمية <strong style="color:var(--slate-200)">عربية أصيلة</strong> بهدوء،
-      بعيداً عن الضجيج. كل منتج هنا يحمل توقيعاً شخصياً واهتماماً بالتفاصيل.
+      بعيداً عن الضجيج. كل منتج هنا يعمل فعلاً — لا نماذج عرض.
     </p>
     <div class="hero-actions fade-up fade-up-d4">
       <a href="#projects" class="btn btn-primary">
-        استعرض المشاريع <span>←</span>
+        استعرض الأعمال <span>←</span>
       </a>
-      <a href="https://x.com/_MyTStudio" target="_blank" class="btn btn-secondary">
-        تابعني على X
+      <a href="https://eduquestlab.com/" target="_blank" rel="noopener" class="btn btn-secondary">
+        أحدث منتج: EduQuest
       </a>
     </div>
   </div>
@@ -708,9 +727,9 @@ a:hover { color: var(--white); }
 <section class="stats">
   <div class="container">
     <div class="stats-grid">
-      <div class="stat-card"><div class="stat-number">٧</div><div class="stat-label">مشاريع في المحفظة</div></div>
-      <div class="stat-card"><div class="stat-number">٣</div><div class="stat-label">منشور</div></div>
-      <div class="stat-card"><div class="stat-number">١</div><div class="stat-label">مطور مستقل</div></div>
+      <div class="stat-card"><div class="stat-number">١٢</div><div class="stat-label">عملاً في المحفظة</div></div>
+      <div class="stat-card"><div class="stat-number">٨</div><div class="stat-label">منشور ويعمل الآن</div></div>
+      <div class="stat-card"><div class="stat-number">٣</div><div class="stat-label">مجالات عمل</div></div>
     </div>
   </div>
 </section>
@@ -720,119 +739,166 @@ a:hover { color: var(--white); }
   <div class="container">
     <div class="section-header">
       <div class="section-label">✦ المعرض</div>
-      <h2>المشاريع</h2>
+      <h2>الأعمال</h2>
       <div class="section-accent"></div>
     </div>
 
-    <!-- Education -->
     <div class="project-category">
       <div class="category-header">
         <span class="category-icon category-icon-edu">📚</span>
         <span class="category-name">التعليم والمدارس</span>
-        <span class="category-count">مشروعان</span>
+        <span class="category-count">٤ أعمال · كلها منشورة</span>
       </div>
       <div class="category-items">
-        <a href="https://eduquestlab.com/" target="_blank" class="project-item">
+        <a href="https://eduquestlab.com/" target="_blank" rel="noopener" class="project-item">
           <span class="project-item-icon">🧪</span>
           <div class="project-item-info">
             <div class="project-item-title">
               EduQuest
               <span class="project-status-dot status-live"></span>
             </div>
-            <div class="project-item-desc">منصة علوم تفاعلية — gamified learning للمرحلة المتوسطة</div>
+            <div class="project-item-desc">منصة علوم تفاعلية للمرحلة المتوسطة — نافس، مختبرات افتراضية، ألعاب صفية ومسارات تعلّم.</div>
             <div class="project-item-link">eduquestlab.com ←</div>
           </div>
         </a>
-        <div class="project-item">
+        <a href="https://al-ameen-portal.vercel.app/" target="_blank" rel="noopener" class="project-item">
           <span class="project-item-icon">🏫</span>
           <div class="project-item-info">
             <div class="project-item-title">
-              منصة المتابعة المدرسية
-              <span class="project-status-dot status-beta"></span>
+              منصة الأمين
+              <span class="project-status-dot status-live"></span>
             </div>
-            <div class="project-item-desc">متابعة الطلاب والمعلمين والغياب والسلوك — ٦٧ مخالفة</div>
-            <div class="project-item-link" style="color:var(--slate-500);">قيد التطوير</div>
+            <div class="project-item-desc">إدارة مدرسية متكاملة — الطلاب، الغياب، السلوك، الدرجات وبطاقات QR.</div>
+            <div class="project-item-link">al-ameen-portal.vercel.app ←</div>
           </div>
-        </div>
+        </a>
+        <a href="https://alameen-tools-bmytstudios-projects.vercel.app/" target="_blank" rel="noopener" class="project-item">
+          <span class="project-item-icon">🧰</span>
+          <div class="project-item-info">
+            <div class="project-item-title">
+              بوابة أدوات الأمين
+              <span class="project-status-dot status-live"></span>
+            </div>
+            <div class="project-item-desc">خطابات ومحاضر وتقارير مدرسية تُبنى وتُطبع جاهزة بصيغة Word وPDF.</div>
+            <div class="project-item-link">أدوات الأمين — Vercel ←</div>
+          </div>
+        </a>
+        <a href="https://msabqa.vercel.app/" target="_blank" rel="noopener" class="project-item">
+          <span class="project-item-icon">🏆</span>
+          <div class="project-item-info">
+            <div class="project-item-title">
+              مسابقة الفصول
+              <span class="project-status-dot status-live"></span>
+            </div>
+            <div class="project-item-desc">تقييم أسبوعي للفصول من المعلمين، ولوحة ترتيب تُحسب تلقائياً مع تصدير النتائج.</div>
+            <div class="project-item-link">msabqa.vercel.app ←</div>
+          </div>
+        </a>
       </div>
     </div>
-
-    <!-- Productivity -->
     <div class="project-category">
       <div class="category-header">
         <span class="category-icon category-icon-tools">🛠️</span>
         <span class="category-name">أدوات إنتاجية</span>
-        <span class="category-count">مشروعان</span>
+        <span class="category-count">٥ أعمال</span>
       </div>
       <div class="category-items">
-        <a href="https://travel-budget-opal.vercel.app/" target="_blank" class="project-item">
+        <a href="https://travel-budget-opal.vercel.app/" target="_blank" rel="noopener" class="project-item">
           <span class="project-item-icon">💰</span>
           <div class="project-item-info">
             <div class="project-item-title">
               ميزانية السفر
               <span class="project-status-dot status-live"></span>
             </div>
-            <div class="project-item-desc">تطبيق PWA لمتابعة ميزانية السفر — خاص ١٠٠٪ بدون حسابات</div>
+            <div class="project-item-desc">تطبيق PWA لمتابعة ميزانية السفر — خاص ١٠٠٪ بدون حسابات.</div>
             <div class="project-item-link">travel-budget-opal.vercel.app ←</div>
           </div>
         </a>
-        <div class="project-item">
+        <a href="https://memo-iris.netlify.app/" target="_blank" rel="noopener" class="project-item">
+          <span class="project-item-icon">🗒️</span>
+          <div class="project-item-info">
+            <div class="project-item-title">
+              مذكرات إيريس
+              <span class="project-status-dot status-live"></span>
+            </div>
+            <div class="project-item-desc">مذكرات وملاحظات سريعة على الجوال — تعمل بلا حساب وبلا إنترنت.</div>
+            <div class="project-item-link">memo-iris.netlify.app ←</div>
+          </div>
+        </a>
+        <div class="project-item is-muted">
+          <span class="project-item-icon">🏥</span>
+          <div class="project-item-info">
+            <div class="project-item-title">
+              ملفي الصحي
+              <span class="project-status-dot status-beta"></span>
+            </div>
+            <div class="project-item-desc">متابعة صحية شخصية — سكر وضغط وأدوية وتذكيرات، على الجوال وبلا إنترنت.</div>
+            <div class="project-item-link" style="color:var(--slate-500);">تطبيق جوال — قيد النشر</div>
+          </div>
+        </div>
+        <div class="project-item is-muted">
+          <span class="project-item-icon">📚</span>
+          <div class="project-item-info">
+            <div class="project-item-title">
+              تلميذ
+              <span class="project-status-dot status-beta"></span>
+            </div>
+            <div class="project-item-desc">رفيق الطالب: مهام يومية، عادات، تأمل مسائي ونمو بالنقاط.</div>
+            <div class="project-item-link" style="color:var(--slate-500);">تطبيق جوال — قيد النشر</div>
+          </div>
+        </div>
+        <div class="project-item is-muted">
           <span class="project-item-icon">📋</span>
           <div class="project-item-info">
             <div class="project-item-title">
               منصة إدارة المهام
               <span class="project-status-dot status-beta"></span>
             </div>
-            <div class="project-item-desc">نظام إدارة مهام متكامل يناسب الفرق الصغيرة والأفراد</div>
+            <div class="project-item-desc">نظام مهام متكامل يناسب الفرق الصغيرة والأفراد — تكرار ومواعيد وتقارير.</div>
             <div class="project-item-link" style="color:var(--slate-500);">قيد التطوير</div>
           </div>
         </div>
       </div>
-      <div style="margin-top:var(--space-3);padding:var(--space-4);border-radius:var(--radius-sm);background:rgba(124,58,237,0.02);border:1px dashed rgba(124,58,237,0.06);">
-        <span style="font-size:var(--text-xs);color:var(--slate-500);">
-          🗺️ برنامج تنظيم الرحلات — <span style="text-decoration:line-through;opacity:0.5;">ملغى</span>
-        </span>
-      </div>
+      <div class="cat-note">المعلّم بـ«قيد النشر» تطبيق جوال يعمل ولم يُنشر رابطه بعد.</div>
     </div>
-
-    <!-- Side Projects -->
     <div class="project-category">
       <div class="category-header">
         <span class="category-icon category-icon-games">🎮</span>
         <span class="category-name">مشاريع جانبية</span>
-        <span class="category-count">٣ مشاريع</span>
+        <span class="category-count">٣ أعمال</span>
       </div>
       <div class="category-items">
-        <a href="https://nyxz.vercel.app/" target="_blank" class="project-item">
-          <span class="project-item-icon">🌙</span>
-          <div class="project-item-info">
-            <div class="project-item-title">
-              Nyx — نيكس
-              <span class="project-status-dot status-live"></span>
-            </div>
-            <div class="project-item-desc">منصة عربية للدعم لتحرير المشاعر — بدون حسابات بدون تتبع</div>
-            <div class="project-item-link">nyxz.vercel.app ←</div>
-          </div>
-        </a>
-        <a href="https://hroof-4l6.pages.dev/" target="_blank" class="project-item">
+        <a href="https://hroof-4l6.pages.dev/" target="_blank" rel="noopener" class="project-item">
           <span class="project-item-icon">🎯</span>
           <div class="project-item-info">
             <div class="project-item-title">
               لعبة حروف الثقافية
               <span class="project-status-dot status-live"></span>
             </div>
-            <div class="project-item-desc">لعبة صفية تفاعلية بشبكة سداسية — ٢٨٠ سؤالاً في ١٠ تصنيفات</div>
+            <div class="project-item-desc">لعبة صفية تفاعلية بشبكة سداسية — ٢٨٠ سؤالاً في ١٠ تصنيفات.</div>
             <div class="project-item-link">hroof-4l6.pages.dev ←</div>
           </div>
         </a>
-        <div class="project-item" style="opacity:0.6;">
+        <a href="https://nyxz.vercel.app/" target="_blank" rel="noopener" class="project-item">
+          <span class="project-item-icon">🌙</span>
+          <div class="project-item-info">
+            <div class="project-item-title">
+              Nyx — نيكس
+              <span class="project-status-dot status-live"></span>
+            </div>
+            <div class="project-item-desc">منصة عربية للتفريغ العاطفي — بلا حسابات وبلا تتبّع.</div>
+            <div class="project-item-link">nyxz.vercel.app ←</div>
+          </div>
+        </a>
+        <div class="project-item is-muted">
           <span class="project-item-icon">💣</span>
           <div class="project-item-info">
             <div class="project-item-title">
               الحرب الذرية
               <span class="project-status-dot status-plan"></span>
             </div>
-            <div class="project-item-desc">لعبة استراتيجية متعددة اللاعبين — في مرحلة التخطيط</div>
+            <div class="project-item-desc">لعبة استراتيجية متعددة اللاعبين — في مرحلة التخطيط.</div>
+            <div class="project-item-link" style="color:var(--slate-500);">قيد التخطيط</div>
           </div>
         </div>
       </div>
@@ -851,7 +917,7 @@ a:hover { color: var(--white); }
         <div class="about-story" style="margin-top:var(--space-6);">
           <p>
             <span class="highlight">معلم علوم</span> ومطور مستقل. أصنع حلولاً رقمية عربية أصيلة
-            في وقت فراغي، بشغف وتفاصيل.
+            في وقت فراغي، بشغف وتفاصيل — وأستخدمها في مدرستي قبل أن أطرحها.
           </p>
           <p>
             أؤمن بأن أفضل برمجيات لا تُصنع في صالات الاجتماعات، بل في هدوء المزاج
@@ -881,7 +947,7 @@ a:hover { color: var(--white); }
       <div class="section-label" style="justify-content:center;">✦ تواصل</div>
       <h2 style="margin-bottom:var(--space-4);">هل لديك فكرة أو استفسار؟</h2>
       <p>تحدث معي على X مباشرة — أنا موجود</p>
-      <a href="https://x.com/_MyTStudio" target="_blank" class="btn btn-primary">
+      <a href="https://x.com/_MyTStudio" target="_blank" rel="noopener" class="btn btn-primary">
         راسلني على X <span>←</span>
       </a>
     </div>
@@ -892,11 +958,11 @@ a:hover { color: var(--white); }
 <footer class="footer">
   <div class="container">
     <div class="footer-inner">
-      <span>© 2026 MyT Studio — <span class="footer-signature">أصنع بهدوء</span></span>
+      <span>© ٢٠٢٦ MyT Studio — <span class="footer-signature">أصنع بهدوء</span></span>
       <div class="footer-links">
         <a href="#top">الرئيسية</a>
-        <a href="#projects">المشاريع</a>
-        <a href="https://x.com/_MyTStudio" target="_blank">X (تويتر سابقاً)</a>
+        <a href="#projects">الأعمال</a>
+        <a href="https://x.com/_MyTStudio" target="_blank" rel="noopener">X</a>
       </div>
     </div>
   </div>

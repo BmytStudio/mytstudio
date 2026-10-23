@@ -1280,6 +1280,19 @@ section{padding-block:clamp(54px,6.6vh,78px);}
   .hero-word, .hero-sticker, .hv-card, .hv-stamp, .cta-note, .cta-spark{animation:none;}
 }
 
+
+/* v7 — أوسمة EduQuest + بطاقة وسائط */
+.project-badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;}
+.p-badge{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:100px;border:1px solid var(--hair-strong);background:rgba(255,255,255,.035);font-size:var(--text-xs);color:var(--slate-300);line-height:1.6;}
+.p-badge img{height:18px;width:auto;max-width:78px;object-fit:contain;flex:0 0 auto;border-radius:3px;}
+.p-badge img.logo-chip{background:#fff;padding:2px 4px;height:22px;max-width:96px;}
+.p-badge--gold{border-color:rgba(212,175,55,.4);color:#E8D9A8;background:rgba(212,175,55,.07);}
+.project-item--media{display:grid;grid-template-columns:132px 1fr;gap:16px;align-items:start;}
+.project-thumb{width:132px;aspect-ratio:3/4;border-radius:12px;overflow:hidden;border:1px solid var(--hair-strong);background:rgba(255,255,255,.03);}
+.project-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+.project-item--static{cursor:default;}
+.project-item--static:hover{transform:none;}
+@media (max-width:640px){.project-item--media{grid-template-columns:104px 1fr;gap:12px;}.project-thumb{width:104px;}}
 </style>
 </head>
 <body>
@@ -1397,7 +1410,7 @@ section{padding-block:clamp(54px,6.6vh,78px);}
 <section class="stats">
   <div class="container">
     <div class="stats-grid">
-      <div class="stat-card"><div class="stat-number">١٢</div><div class="stat-label">عملاً في المحفظة</div></div>
+      <div class="stat-card"><div class="stat-number">١٣</div><div class="stat-label">عملاً في المحفظة</div></div>
       <div class="stat-card"><div class="stat-number">٨</div><div class="stat-label">منشورة</div></div>
       <div class="stat-card"><div class="stat-number">٣</div><div class="stat-label">مجالات عمل</div></div>
     </div>
@@ -1434,6 +1447,10 @@ section{padding-block:clamp(54px,6.6vh,78px);}
               <span class="project-status-dot status-live"></span>
             </div>
             <div class="project-item-desc">منصة علوم تفاعلية للمرحلة المتوسطة — نافس، مختبرات افتراضية، ألعاب صفية ومسارات تعلّم.</div>
+            <div class="project-badges">
+              <span class="p-badge p-badge--gold"><img src="shots/saif.png" alt="" width="16" height="16" loading="lazy">تأهل للمشاركة في معرض ومسابقة الأمن و الابتكار العالمية SAIF</span>
+              <span class="p-badge"><img class="logo-chip" src="shots/saip.svg" alt="شعار الهيئة السعودية للملكية الفكرية" loading="lazy">مسجلة في الهيئة السعودية للملكية الفكرية</span>
+            </div>
             <div class="project-item-link">eduquestlab.com ←</div>
           </div>
         </a>
@@ -1558,9 +1575,20 @@ section{padding-block:clamp(54px,6.6vh,78px);}
       <div class="category-header">
         <span class="category-icon category-icon-games">🎮</span>
         <span class="category-name">مشاريع جانبية</span>
-        <span class="category-count">٣ أعمال</span>
+        <span class="category-count">٤ أعمال</span>
       </div>
       <div class="category-items">
+        <div class="project-item project-item--media project-item--static">
+          <div class="project-thumb"><img src="shots/lia-gate.jpg" alt="مشهد من لعبة مفترق الأقدار" width="360" height="480" loading="lazy"></div>
+          <div class="project-item-info">
+            <div class="project-item-title">
+              🎲 مفترق الأقدار
+              <span class="project-status-dot status-dev"></span>
+            </div>
+            <div class="project-item-desc">لعبة مغامرات نصية عربية: كل اختيار يفتح مساراً ويغلق آخر، وفرص النجاح تُحسب من سمات شخصيتك — لا من الحظ وحده.</div>
+            <div class="project-item-link">عربي وإنجليزي · تعمل في المتصفح · قيد البناء</div>
+          </div>
+        </div>
         <a href="https://hroof-4l6.pages.dev/" target="_blank" rel="noopener" class="project-item">
           <span class="project-item-icon">🎯</span>
           <div class="project-item-info">
